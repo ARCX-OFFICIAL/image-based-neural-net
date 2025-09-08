@@ -5,10 +5,10 @@ import torch.optim as optim
 from torchvision import datasets, transforms
 from torch.utils.data import DataLoader
 
-for i in range(2):
+for i in range(3):
     dml = torch_directml.device()
 
-    noepoch = 4
+    noepoch = 1
 
     inputTransforms = transforms.Compose([
         transforms.Resize((64, 64)),
@@ -79,4 +79,5 @@ for i in range(2):
                 print(f'correct: {correct}, incorrect: {incorrect}, percent: {(correct/(correct+incorrect)) * 100}')
 
     test()
+
 
