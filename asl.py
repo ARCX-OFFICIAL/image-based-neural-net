@@ -16,8 +16,8 @@ for i in range(2):
         transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))
     ])
 
-    train_path = "C:/Users/yukid/ASL-Alphabet-Dataset/Data/train"
-    test_path = "C:/Users/yukid/ASL-Alphabet-Dataset/Data/test"
+    train_path = path/to/your/database"
+    test_path = "path/to/your/database"
 
     class ASLModel(nn.Module):
         def __init__(self):
@@ -79,3 +79,4 @@ for i in range(2):
                 print(f'correct: {correct}, incorrect: {incorrect}, percent: {(correct/(correct+incorrect)) * 100}')
 
     test()
+
